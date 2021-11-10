@@ -1,6 +1,6 @@
 package com.example.demo.unit;
 
-public class Test {
+public class TestingGitPackage {
 
 
     public void display(String params){

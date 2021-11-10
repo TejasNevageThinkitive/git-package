@@ -37,7 +37,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub dhananjaykolte Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/TejasNevageThinkitive/test</url>
+			<url>https://maven.pkg.github.com/TejasNevageThinkitive/git-package</url>
 		</repository>
 	</distributionManagement>
 
@@ -46,15 +46,15 @@
 			<name>Tejas</name>
 			<email>tejas@gmail.com</email>
 			<organization>com.github.TejasNevageThinkitive</organization>
-			<organizationUrl>https://github.com/TejasNevageThinkitive/test</organizationUrl>
+			<organizationUrl>https://github.com/TejasNevageThinkitive/git-package</organizationUrl>
 		</developer>
 	</developers>
 
 	<scm>
-		<connection>scm:git:git://github.com/TejasNevageThinkitive/test1.git</connection>
-		<developerConnection>scm:git:https://github.com/TejasNevageThinkitive/test.git
+		<connection>scm:git:git://github.com/TejasNevageThinkitive/git-package.git</connection>
+		<developerConnection>scm:git:https://github.com/TejasNevageThinkitive/git-package.git
 		</developerConnection>
-		<url>https://github.com/TejasNevageThinkitive/test1</url>
+		<url>https://github.com/TejasNevageThinkitive/git-package</url>
 		<tag>test1</tag>
 	</scm>
 
