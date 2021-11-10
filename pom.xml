@@ -12,6 +12,7 @@
 	<artifactId>gitpackage</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gitpackage</name>
+	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -29,8 +30,69 @@
 		</dependency>
 	</dependencies>
 
+
+
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub dhananjaykolte Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/TejasNevageThinkitive/test</url>
+		</repository>
+	</distributionManagement>
+
+	<developers>
+		<developer>
+			<name>Tejas</name>
+			<email>tejas@gmail.com</email>
+			<organization>com.github.TejasNevageThinkitive</organization>
+			<organizationUrl>https://github.com/TejasNevageThinkitive/test</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/TejasNevageThinkitive/test1.git</connection>
+		<developerConnection>scm:git:https://github.com/TejasNevageThinkitive/test.git
+		</developerConnection>
+		<url>https://github.com/TejasNevageThinkitive/test1</url>
+		<tag>test1</tag>
+	</scm>
+
 	<build>
+		<pluginManagement>
+			<plugins>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-plugin-plugin</artifactId>
+					<version>3.6.0</version>
+					<configuration>
+						<!-- see http://jira.codehaus.org/browse/MNG-5346 -->
+						<skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>3.9.1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>8</source>
+					<target>8</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
